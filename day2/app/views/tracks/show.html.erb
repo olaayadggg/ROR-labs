@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @track %>
+
+<div class="btn btn-primary">
+  <%= link_to "Edit this track", edit_track_path(@track) %> 
+  <p class="btn btn-info">
+  <%= link_to "Back to tracks", tracks_path %>
+  </p>
+   <p class="btn btn-danger">
+  <%= button_to "Destroy this track", @track, method: :delete %>
+  </p>
+</div>
